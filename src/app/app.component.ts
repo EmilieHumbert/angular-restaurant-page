@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-restaurant-page';
+
+  clickEvent() {
+    const mainNav = document.getElementById('main-nav');
+    if (mainNav) {
+      mainNav.classList.toggle('open');
+    }
+  }
 }
